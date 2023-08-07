@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<title>CLI Guide</title>
+<meta name="author" content="CLI Guide (Version: 6.3.0)">
+<title>Azure Application and Code Assessment Toolkit</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,14 +439,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body id="cli-guide" class="book">
 <div id="header">
-<h1>CLI Guide</h1>
+<h1>Azure Application and Code Assessment Toolkit</h1>
+<div class="details">
+<span id="author" class="author">CLI Guide (Version: 6.3.0)</span><br>
+</div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_introduction">1. Introduction</a>
 <ul class="sectlevel2">
 <li><a href="#about-cli-guide_cli-guide">1.1. About the CLI Guide</a></li>
-<li><a href="#what-is-the-toolkit_cli-guide">1.2. About the Azure Application and Code Assessment Toolkit by Microsoft</a></li>
+<li><a href="#what-is-the-toolkit_cli-guide">1.2. About the Azure Application and Code Assessment Toolkit</a></li>
 </ul>
 </li>
 <li><a href="#_installing_and_running_the_cli">2. Installing and Running the CLI</a>
@@ -530,14 +534,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="about-cli-guide_cli-guide">1.1. About the CLI Guide</h3>
 <div class="paragraph">
-<p>This guide is for engineers, consultants, and others who want to use the Azure Application and Code Assessment Toolkit by Microsoft (APPCAT) to migrate Java applications or other components. It describes how to install and run the CLI, review the generated reports, and take advantage of additional features.</p>
+<p>This guide is for engineers, consultants, and others who want to use the Azure Application and Code Assessment Toolkit (APPCAT) to migrate Java applications or other components. It describes how to install and run the CLI, review the generated reports, and take advantage of additional features.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="what-is-the-toolkit_cli-guide">1.2. About the Azure Application and Code Assessment Toolkit by Microsoft</h3>
-<h4 id="_what_is_the_azure_application_and_code_assessment_toolkit_by_microsoft" class="discrete">What is the Azure Application and Code Assessment Toolkit by Microsoft?</h4>
+<h3 id="what-is-the-toolkit_cli-guide">1.2. About the Azure Application and Code Assessment Toolkit</h3>
+<h4 id="_what_is_the_azure_application_and_code_assessment_toolkit" class="discrete">What is the Azure Application and Code Assessment Toolkit?</h4>
 <div class="paragraph">
-<p>The Azure Application and Code Assessment Toolkit by Microsoft (APPCAT) is an extensible and customizable rule-based tool that simplifies the migration and modernization of Java applications.</p>
+<p>The Azure Application and Code Assessment Toolkit (APPCAT) is an extensible and customizable rule-based tool that simplifies the migration and modernization of Java applications.</p>
 </div>
 <div class="paragraph">
 <p>APPCAT examines application artifacts, including project source directories and application archives, and then produces an HTML report highlighting areas needing changes. APPCAT supports many migration paths, including the following examples:</p>
@@ -567,16 +571,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>For more information about use cases and migration paths, see the <a href="https://learn.microsoft.com/azure/developer/java/migration/">Java to Azure migration strategy documentation</a>.</p>
 </div>
-<h4 id="_how_does_the_azure_application_and_code_assessment_toolkit_by_microsoft_simplify_migration" class="discrete">How does the Azure Application and Code Assessment Toolkit by Microsoft simplify migration?</h4>
+<h4 id="_how_does_the_azure_application_and_code_assessment_toolkit_simplify_migration" class="discrete">How does the Azure Application and Code Assessment Toolkit simplify migration?</h4>
 <div class="paragraph">
-<p>The Azure Application and Code Assessment Toolkit by Microsoft looks for common resources and known trouble spots when migrating applications. It provides a high-level view of the technologies used by the application.</p>
+<p>The Azure Application and Code Assessment Toolkit looks for common resources and known trouble spots when migrating applications. It provides a high-level view of the technologies used by the application.</p>
 </div>
 <div class="paragraph">
 <p>APPCAT generates a detailed report evaluating a migration or modernization path. This report can help you to estimate the effort required for large-scale projects and to reduce the work involved.</p>
 </div>
 <h3 id="about-cli_cli-guide" class="discrete">About the CLI</h3>
 <div class="paragraph">
-<p>The CLI is a command-line tool in the Azure Application and Code Assessment Toolkit by Microsoft that allows you to assess and prioritize migration and modernization efforts for applications. It provides numerous reports that highlight the analysis without the overhead of the other tools. The CLI includes a wide array of customization options, and allows you to finely tune APPCAT analysis options or integrate with external automation tools.</p>
+<p>The CLI is a command-line tool in the Azure Application and Code Assessment Toolkit that allows you to assess and prioritize migration and modernization efforts for applications. It provides numerous reports that highlight the analysis without the overhead of the other tools. The CLI includes a wide array of customization options, and allows you to finely tune APPCAT analysis options or integrate with external automation tools.</p>
 </div>
 </div>
 </div>
@@ -773,7 +777,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </li>
 <li>
-<p>To enable Bash completion for all users across system restarts, copy the Azure Application and Code Assessment Toolkit by Microsoft CLI Bash completion file to the <code>/etc/bash_completion.d/</code> directory as the root user.</p>
+<p>To enable Bash completion for all users across system restarts, copy the Azure Application and Code Assessment Toolkit CLI Bash completion file to the <code>/etc/bash_completion.d/</code> directory as the root user.</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-terminal" data-lang="terminal"># cp &lt;APPCAT_HOME&gt;/bash-completion/appcat-cli /etc/bash_completion.d/</code></pre>
@@ -801,7 +805,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="access-report_cli-guide">3. Accessing reports</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When you run the Azure Application and Code Assessment Toolkit by Microsoft, a report is generated in the <code>&lt;OUTPUT_REPORT_DIRECTORY&gt;</code> that you specify using the <code>--output</code> argument in the command line.</p>
+<p>When you run the Azure Application and Code Assessment Toolkit, a report is generated in the <code>&lt;OUTPUT_REPORT_DIRECTORY&gt;</code> that you specify using the <code>--output</code> argument in the command line.</p>
 </div>
 <div class="paragraph">
 <p>The output directory contains the following files and subdirectories:</p>
@@ -1983,7 +1987,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 <div class="sect2">
 <h3 id="tech-tags_cli-guide">A.2. Supported technology tags</h3>
 <div class="paragraph">
-<p>The following technology tags are supported in APPCAT 1.1.0:</p>
+<p>The following technology tags are supported in APPCAT 6.3.0:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3126,7 +3130,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 <p><em>Story points</em> are an abstract metric commonly used in Agile software development to estimate the <em>level of effort</em> needed to implement a feature or change.</p>
 </div>
 <div class="paragraph">
-<p>The Azure Application and Code Assessment Toolkit by Microsoft uses story points to express the level of effort needed to migrate particular application constructs, and the application as a whole. It does not necessarily translate to man-hours, but the value should be consistent across tasks.</p>
+<p>The Azure Application and Code Assessment Toolkit uses story points to express the level of effort needed to migrate particular application constructs, and the application as a whole. It does not necessarily translate to man-hours, but the value should be consistent across tasks.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3207,7 +3211,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 </dl>
 </div>
 <div class="paragraph">
-<p>For more information on categorizing tasks, see <a href="https://access.redhat.com/documentation/en-us/placeholder_to_update/1.1/html-single/rules_development_guide/rule_categories_rules-development-guide#rule_categories_rules-development-guide">Using custom rule categories</a>.</p>
+<p>For more information on categorizing tasks, see <a href="https://access.redhat.com/documentation/en-us/migration_toolkit_for_applications/6.1/html-single/rules_development_guide/rule_categories_rules-development-guide#rule_categories_rules-development-guide">Using custom rule categories</a>.</p>
 </div>
 </div>
 </div>
@@ -3216,7 +3220,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 <div class="sect3">
 <h4 id="get-involved_cli-guide">A.4.1. Getting involved</h4>
 <div class="paragraph">
-<p>To help the Azure Application and Code Assessment Toolkit by Microsoft cover most application constructs and server configurations, including yours, you can help with any of the following items.</p>
+<p>To help the Azure Application and Code Assessment Toolkit cover most application constructs and server configurations, including yours, you can help with any of the following items.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3224,7 +3228,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 <p>Send an email to <a href="mailto:azure-appcat@microsoft.com">azure-appcat@microsoft.com</a> and let us know what APPCAT migration rules should cover.</p>
 </li>
 <li>
-<p>You can also contribute by providing feedback directly to our GitHub project at <a href="https://github.com/Azure/windup-rulesets/issues">https://github.com/Azure/windup-rulesets/issues</a>.</p>
+<p>You can also contribute by providing feedback directly to our GitHub project at <a href="https://github.com/Azure/appcat-rulesets/issues">https://github.com/Azure/appcat-rulesets/issues</a>.</p>
 </li>
 <li>
 <p>Provide example applications to test migration rules.</p>
@@ -3243,20 +3247,20 @@ The incidents and estimated story points change as new rules are added to APPCAT
 </div>
 </li>
 <li>
-<p>Try Azure Application and Code Assessment Toolkit by Microsoft on your application. Be sure to report any issues you encounter.</p>
+<p>Try Azure Application and Code Assessment Toolkit on your application. Be sure to report any issues you encounter.</p>
 </li>
 <li>
-<p>Contribute to the Azure Application and Code Assessment Toolkit by Microsoft rules repository.</p>
+<p>Contribute to the Azure Application and Code Assessment Toolkit rules repository.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Write a Azure Application and Code Assessment Toolkit by Microsoft rule to identify or automate a migration process.</p>
+<p>Write a Azure Application and Code Assessment Toolkit rule to identify or automate a migration process.</p>
 </li>
 <li>
 <p>Create a test for the new rule.</p>
 </li>
 <li>
-<p>Details are provided in the <a href="https://access.redhat.com/documentation/en-us/placeholder_to_update/1.1/html-single/rules_development_guide"><em>Rules Development Guide</em></a>.</p>
+<p>Details are provided in the <a href="https://access.redhat.com/documentation/en-us/migration_toolkit_for_applications/6.1/html-single/rules_development_guide"><em>Rules Development Guide</em></a>.</p>
 </li>
 </ul>
 </div>
@@ -3285,7 +3289,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 <div class="ulist">
 <ul>
 <li>
-<p>GitHub issues: <a href="https://github.com/Azure/windup-rulesets/issues" class="bare">https://github.com/Azure/windup-rulesets/issues</a></p>
+<p>GitHub issues: <a href="https://github.com/Azure/appcat-rulesets/issues" class="bare">https://github.com/Azure/appcat-rulesets/issues</a></p>
 </li>
 <li>
 <p>Contact the APPCAT team at: <a href="mailto:azure-appcat@microsoft.com">azure-appcat@microsoft.com</a></p>
@@ -3296,7 +3300,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 <div class="sect3">
 <h4 id="_reporting_issues">A.4.3. Reporting issues</h4>
 <div class="paragraph">
-<p>APPCAT uses GitHub as its issue tracking system. If you encounter an issue executing APPCAT, submit a <a href="https://github.com/Azure/windup-rulesets/issues">an issue</a>.</p>
+<p>APPCAT uses GitHub as its issue tracking system. If you encounter an issue executing APPCAT, submit a <a href="https://github.com/Azure/appcat-rulesets/issues">an issue</a>.</p>
 </div>
 <div class="paragraph">
 <p><br>
@@ -3305,7 +3309,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 <br></p>
 </div>
 <div class="paragraph">
-<p><em class="right">Revised on 2023-07-25 23:41:05 UTC</em></p>
+<p><em class="right">Revised on 2023-08-04 05:10:30 UTC</em></p>
 </div>
 </div>
 </div>
@@ -3314,7 +3318,7 @@ The incidents and estimated story points change as new rules are added to APPCAT
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-07-25 23:40:53 UTC
+Last updated 2023-08-04 05:10:21 UTC
 </div>
 </div>
 </body>
