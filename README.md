@@ -1,6 +1,6 @@
-# Azure AppCAT
+# Azure Migrate application and code assessment for Java
 
-The Azure Application and Code Assessment Toolkit (AppCAT) is a set of tools to help customers assess their applications prior to deployment to Azure. 
+The Azure Migrate application and code assessment for Java (AppCAT for Java) is a set of tools to help customers assess their applications prior to deployment to Azure. 
 
 This repository holds the HTML-generated documentation of said tools. The documentation is primarily based on the upstream repository [windup-documentation](https://github.com/windup/windup-documentation).
 
